@@ -1,0 +1,81 @@
+@fonteRoboto: Roboto, sans-serif;
+@fonteLobster: Lobster, sans-serif;
+
+@corFundoBranco: #fff;
+@corTextoBranco: #fff;
+@corBordaBottomBranco: #fff;
+
+@corFundoPreto: #000;
+@corTextoPreto: #000;
+
+@corFundoCinza: #ccc;
+@corTextoCinza: #ccc;
+
+@corFundoVermelho: #eb3b5a;
+@corTextoVermelho: #eb3b5a;
+
+@corFundoVerde: #20bf6b;
+@corTextoVerde: #20bf6b;
+
+@corFundoAzul: #3867d6;
+
+@corFundoAmarelo: #f7b731;
+@corTextoAmarelo: #f7b731;
+@corBotaoAmarelo: #f7b731;
+
+
+body {
+  background-color: @corFundoVermelho;
+  color: @corTextoBranco;
+  font-family: @fonteRoboto;
+}
+
+h1 {
+  font-family: @fonteLobster;
+  font-size: 3em;
+}
+
+main {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 2em;
+  text-align: center;
+}
+
+button {
+  padding: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.3em;
+  margin-top: 16px;
+  border-radius: 8px;
+  background-color: @corBotaoAmarelo;
+  color: @corTextoPreto;
+  font-family: @fonteRoboto;
+}
+
+input {
+  display: block;
+  margin: 16px auto 0;
+  font-size: 2em;
+  max-width: 120px;
+  border: none;
+  background-color: transparent;
+  text-align: center;
+  color: @corFundoBranco;
+  border-bottom: 6px solid @corBordaBottomBranco;
+}
+
+.resultado {
+  padding: 16px;
+  margin-top: 120px;
+  border: 8px dotted @corFundoBranco;
+  display: none;
+
+  span {
+    font-weight: bold;
+    font-size: 3em;
+    display: block;
+  }
+}
