@@ -4,6 +4,7 @@
 @corFundoBranco: #fff;
 @corTextoBranco: #fff;
 @corBordaBottomBranco: #fff;
+@corBotaoBranco: #fff;
 
 @corFundoPreto: #000;
 @corTextoPreto: #000;
@@ -11,8 +12,9 @@
 @corFundoCinza: #ccc;
 @corTextoCinza: #ccc;
 
-@corFundoVermelho: #eb3b5a;
-@corTextoVermelho: #eb3b5a;
+@corFundoVermelho: #860813;
+@corTextoVermelho: #860813;
+@corBotaoVermelho: #860813;
 
 @corFundoVerde: #20bf6b;
 @corTextoVerde: #20bf6b;
@@ -44,15 +46,23 @@ main {
 }
 
 button {
-  padding: 16px;
+  padding: 16px 20px;
   cursor: pointer;
   font-weight: bold;
   font-size: 1.3em;
   margin-top: 16px;
-  border-radius: 8px;
-  background-color: @corBotaoAmarelo;
-  color: @corTextoPreto;
+  border-radius: 30px;
+  background-color: @corBotaoBranco;
+  color: @corTextoVermelho;
   font-family: @fonteRoboto;
+  border: 1px solid @corTextoVermelho;
+
+  &:hover {
+    background-color: @corBotaoVermelho;
+    color: @corTextoBranco;
+    border: 1px solid @corTextoBranco;
+    transform: scale(1.20);
+  }
 }
 
 input {
